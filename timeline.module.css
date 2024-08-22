@@ -1,0 +1,126 @@
+.timeline {
+    position: relative;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+}
+
+
+.timeline-DateTime {
+    margin-right: 20px;
+}
+
+.dateContainer {
+    border: 3px solid rgb(149, 147, 147);
+    width: 80px;
+    height: auto;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dateContainer:hover {
+    background-color: whitesmoke;
+}
+
+.monthYear,
+.day,
+.weekday,
+.time {
+    font-weight: bold;
+}
+
+.monthYear {
+    font-size: 12px;
+}
+
+.day {
+    font-size: 24px;
+}
+
+.weekday {
+    font-size: 12px;
+}
+
+.time {
+    font-size: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+
+
+
+.timeline-item-content {
+    padding: 10px;
+    position: relative;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.timeline-title {
+    font-weight: 500;
+}
+
+.timeline-desc {
+    color: #505050DE;
+}
+
+/* Size-specific styles */
+.small .timeline-title {
+    font-size: 14px;
+}
+
+.medium .timeline-title {
+    font-size: 18px;
+}
+
+.large .timeline-title {
+    font-size: 20px;
+}
+
+.small .timeline-desc {
+    font-size: 12px;
+}
+
+.medium .timeline-desc {
+    font-size: 14px;
+}
+
+.large .timeline-desc {
+    font-size: 16px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #b1b0b0;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: -26px;
+    z-index: 11;
+}
+
+.timeline-item-content::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    border-radius: 1px;
+    background-color: #BDBDBD;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+}
+
+p {
+    margin: 0;
+}
