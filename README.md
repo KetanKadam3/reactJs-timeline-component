@@ -49,7 +49,10 @@ function App() {
 
   return (
     <>
+    
       <Timeline items={data} size="lg" />
+
+      
     </>
   );
 }
